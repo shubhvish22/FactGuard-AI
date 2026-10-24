@@ -1,3 +1,4 @@
+
 # FactGuard AI — Multimodal Fake News & Image Verification System
 
 FactGuard AI is an enterprise-grade multimodal fact-checking and media forensics platform that verifies submitted **text claims** and **digital images**. It features a modern **Chrome Extension (Manifest V3)** coupled with a high-performance **Python Flask / Waitress WSGI backend**.
@@ -229,3 +230,7 @@ python backend/test_suite.py
 ## License
 
 MIT License — Copyright (c) FactGuard AI Contributors.
+=======
+# FactGuard-AI
+AI-powered fake news detection and credibility verification for text and images.
+
