@@ -1,0 +1,27 @@
+# --- Core Web Framework ---
+flask>=3.0.0
+flask-cors>=5.0.0
+python-dotenv>=1.0.0
+
+# --- Production WSGI Server (Windows & Cross-Platform) ---
+waitress>=3.0.0
+
+# --- Core ML & Data Science ---
+scikit-learn>=1.4.0
+pandas>=2.2.0
+numpy>=1.26.0
+scipy>=1.13.0
+joblib>=1.4.0
+
+# --- Deep Learning / Transformers (Optional / Primary) ---
+torch>=2.2.0
+transformers>=4.40.0
+huggingface_hub>=0.23.0
+
+# --- Image Processing & Forensics ---
+Pillow>=10.3.0
+imagehash>=4.3.1
+
+# --- News & External Verification APIs ---
+requests>=2.31.0
+feedparser>=6.0.11

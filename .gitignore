@@ -1,0 +1,74 @@
+# ==============================================================================
+# FactGuard AI — Comprehensive .gitignore for GitHub
+# Prevents leaking credentials, bloated datasets, runtime databases, and caches
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.cpython-*.pyc
+*.pyo
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+backend/venv/
+**/venv/
+**/.venv/
+
+# Environment Variables & Secrets (CRITICAL FOR GITHUB SECURITY)
+.env
+*.env
+backend/.env
+backup_pre_refactor/**/.env
+
+# Local Databases & Concurrency Journal Files
+*.db
+*.db-shm
+*.db-wal
+factguard.db
+image_hashes.db
+backend/image_hashes.db
+backend/image_hashes.db-shm
+backend/image_hashes.db-wal
+
+# Heavy Datasets & Training Media (Too large for GitHub)
+data_2/
+data_3/
+FLORIDA/
+backend/data/florida_cache/
+backend/data/__MACOSX/
+*.npz
+
+# Model Caches, Checkpoint Backups & Deep Learning Weights
+backend/models/bert_cache/
+backend/models/hf_img_cache/
+*.pkl.bak
+backend/models/*.pkl.bak
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# External Unrelated Repositories & Backups
+api-anything-main/
+backup_pre_refactor/
+
+# Temporary Scratch & Test Images
+test_car.png
+vecteezy_flying_car.jpg
+backend/data/test_floating_cars.jpg
+
+# IDE, OS & Tool Metadata
+.serena/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.log
+.pytest_cache/
